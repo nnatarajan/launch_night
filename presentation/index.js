@@ -36,9 +36,10 @@ preloader(images);
 
 const theme = createTheme({
   primary: "white",
-  secondary: "#1F2022",
-  tertiary: "#03A9FC",
-  quartenary: "#CECECE"
+  secondary: "#020509",
+  tertiary: "#00CFFA",
+  quartenary: "#FF0038",
+  quinary: "#FFCE38",
 }, {
   primary: "Montserrat",
   secondary: "Helvetica"
@@ -48,11 +49,11 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
-        <Slide transition={["zoom"]} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
+        <Slide transition={["zoom"]} bgColor="secondary">
+          <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+            Welcome to Pet Helper
           </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+          <Text margin="10px 0 0" textColor="quinary" size={1} fit bold>
             open the presentation/index.js file to get started
           </Text>
         </Slide>
