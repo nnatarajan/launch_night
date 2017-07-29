@@ -11,7 +11,8 @@ import {
   List,
   Quote,
   Slide,
-  Text
+  Text,
+  Image
 } from "spectacle";
 
 // Import image preloader util
@@ -29,7 +30,13 @@ const images = {
   city: require("../assets/city.jpg"),
   kat: require("../assets/kat.png"),
   logo: require("../assets/formidable-logo.svg"),
-  markdown: require("../assets/markdown.png")
+  markdown: require("../assets/markdown.png"),
+  dog: require("../assets/dog.jpg"),
+  dogwide: require("../assets/dog-wide.jpg"),
+  puppy: require("../assets/puppy.jpg"),
+  cat: require("../assets/cat.jpg"),
+  catwide: require("../assets/cat-wide.jpg"),
+  git: require("../assets/git.svg")
 };
 
 preloader(images);
@@ -50,12 +57,10 @@ export default class Presentation extends React.Component {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
         <Slide transition={["zoom"]} bgColor="secondary">
-          <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
             Welcome to Pet Helper
           </Heading>
-          <Text margin="10px 0 0" textColor="quinary" size={1} fit bold>
-            open the presentation/index.js file to get started
-          </Text>
+          <Image src={images.catwide} height="293px"/>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Typography</Heading>
