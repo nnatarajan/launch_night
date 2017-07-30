@@ -59,23 +59,21 @@ export default class Presentation extends React.Component {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
         <Slide transition={["zoom"]} bgColor="secondary">
-          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary"     textAlign="center" margin="5%">
             Welcome to Pet Helper!
           </Heading>
             <Image src={images.dogwide} />
-            <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            <Heading size={1} fit caps lineHeight={1} textColor="primary" textAlign="center" margin="5%">
               An app built to assist you in taking care of your pets.
             </Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>Typography</Heading>
-          <Heading size={1} textColor="secondary">Heading 1</Heading>
-          <Heading size={2} textColor="secondary">Heading 2</Heading>
-          <Heading size={3} textColor="secondary">Heading 3</Heading>
-          <Heading size={4} textColor="secondary">Heading 4</Heading>
-          <Heading size={5} textColor="secondary">Heading 5</Heading>
-          <Text size={6} textColor="secondary">Standard text</Text>
-          <Image src={images.catwide} height="293px"/>
+          <Heading size={2} textColor="secondary" textAlign="center" margin="5%"> Unhappy Pet?</Heading>
+          <Image src={images.catwide} />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={2} textColor="secondary" textAlign="center" margin="10%"> Let's Fix That..</Heading>
+          <Image src={images.catwide} />
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Typography</Heading>
