@@ -33,7 +33,9 @@ const images = {
   markdown: require("../assets/markdown.png"),
   dog: require("../assets/dog.jpg"),
   dogwide: require("../assets/dog-wide.jpg"),
+  dogray: require("../assets/dog-gray.jpg"),
   puppy: require("../assets/puppy.jpg"),
+  puppygray: require("../assets/puppy-gray.jpg"),
   cat: require("../assets/cat.jpg"),
   catwide: require("../assets/cat-wide.jpg"),
   git: require("../assets/git.svg")
@@ -48,19 +50,22 @@ const theme = createTheme({
   quartenary: "#FF0038",
   quinary: "#FFCE38",
 }, {
-  primary: "Montserrat",
-  secondary: "Helvetica"
+  primary: "Droid+Sans:700",
+  secondary: "Lato:700"
 });
 
 export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
-        <Slide transition={["zoom"]} bgColor="tertiary">
+        <Slide transition={["zoom"]} bgColor="secondary">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
             Welcome to Pet Helper!
           </Heading>
-
+            <Image src={images.dogwide} />
+            <Heading size={1} fit caps lineHeight={1} textColor="primary">
+              An app built to assist you in taking care of your pets.
+            </Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Typography</Heading>
