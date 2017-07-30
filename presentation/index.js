@@ -56,10 +56,20 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
-        <Slide transition={["zoom"]} bgColor="secondary">
+        <Slide transition={["zoom"]} bgColor="tertiary">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
-            Welcome to Pet Helper
+            Welcome to Pet Helper!
           </Heading>
+
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={6} textColor="primary" caps>Typography</Heading>
+          <Heading size={1} textColor="secondary">Heading 1</Heading>
+          <Heading size={2} textColor="secondary">Heading 2</Heading>
+          <Heading size={3} textColor="secondary">Heading 3</Heading>
+          <Heading size={4} textColor="secondary">Heading 4</Heading>
+          <Heading size={5} textColor="secondary">Heading 5</Heading>
+          <Text size={6} textColor="secondary">Standard text</Text>
           <Image src={images.catwide} height="293px"/>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
