@@ -21,6 +21,9 @@ import preloader from "spectacle/lib/utils/preloader";
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
 
+// Import iframe for youtube
+import Iframe from 'react-iframe';
+
 // Require CSS
 require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
@@ -72,8 +75,22 @@ export default class Presentation extends React.Component {
           <Image src={images.catwide} />
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={2} textColor="secondary" textAlign="center" margin="10%"> Let's Fix That..</Heading>
-          <Image src={images.catwide} />
+          <Heading size={2} textColor="secondary" textAlign="center" margin="5%"> Let's Fix That..</Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <div
+            max-width="100vw"
+            height="100vh"
+            overflow="hidden"
+            position="relative"
+            >
+          <Iframe url="https://www.youtube.com/embed/5dbG4wqN0rQ"
+            top="0"
+            left="0"
+            width="100vw"
+            height="100vh"
+            position="relative"
+            allowFullScreen/></div>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>Typography</Heading>
@@ -102,4 +119,8 @@ export default class Presentation extends React.Component {
       </Deck>
     );
   }
+  // const youtubeStyle = {
+  //   white: { color: 'white' },
+  // }
+
 }
