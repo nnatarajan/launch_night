@@ -75,7 +75,10 @@ export default class Presentation extends React.Component {
           <Image src={images.catwide} />
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={2} textColor="secondary" textAlign="center" margin="5%"> Let's Fix That..</Heading>
+          <Heading size={2} textColor="secondary" textAlign="center" margin="5%">Let's Fix That..</Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={2} textColor="secondary" textAlign="center" margin="5%">Let's Make All Your Pets Happy!</Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <div
