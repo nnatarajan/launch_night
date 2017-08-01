@@ -61,16 +61,16 @@ export default class Presentation extends React.Component {
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
         <Slide transition={["zoom"]} bgColor="secondary" bgImage={images.city}>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide transition={["zoom"]} bgColor="tertiary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary"     textAlign="center" margin="5%">
             Welcome to Pet Helper!
           </Heading>
             <Image src={images.dogwide} />
-            <Heading size={1} fit caps lineHeight={1} textColor="primary" textAlign="center" margin="5%">
+            <Heading size={1} fit caps lineHeight={1} textColor="secondary" textAlign="center" margin="5%">
               An app built to assist you in taking care of your pets.
             </Heading>
         </Slide>
-        <Slide transition={["fade"]} bgColor="tertiary">
+        <Slide transition={["fade"]} bgColor="quartenary">
           <Heading size={2} textColor="secondary" textAlign="center" margin="5%"> Unhappy Pet?</Heading>
           <Image src={images.catwide} />
         </Slide>
