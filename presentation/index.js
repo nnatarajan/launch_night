@@ -36,9 +36,7 @@ const images = {
   markdown: require("../assets/markdown.png"),
   dog: require("../assets/dog.jpg"),
   dogwide: require("../assets/dog-wide.jpg"),
-  dogray: require("../assets/dog-gray.jpg"),
   puppy: require("../assets/puppy.jpg"),
-  puppygray: require("../assets/puppy-gray.jpg"),
   cat: require("../assets/cat.jpg"),
   catwide: require("../assets/cat-wide.jpg"),
   git: require("../assets/git.svg")
@@ -61,8 +59,10 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
-        <Slide transition={["zoom"]} bgColor="secondary">
-          <Heading size={1} fit caps lineHeight={1} textColor="primary"     textAlign="center" margin="5%">
+        <Slide transition={["zoom"]} bgColor="secondary" bgImage={images.city}>
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary"     textAlign="center" margin="5%">
             Welcome to Pet Helper!
           </Heading>
             <Image src={images.dogwide} />
