@@ -39,6 +39,8 @@ const images = {
   puppy: require("../assets/puppy.jpg"),
   cat: require("../assets/cat.jpg"),
   catwide: require("../assets/cat-wide.jpg"),
+  gifirst: require("../assets/pet1.gif"),
+  gifsecond: require("../assets/pet2.gif"),
   git: require("../assets/git.svg")
 };
 
@@ -96,11 +98,30 @@ export default class Presentation extends React.Component {
             allowFullScreen/></div>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>Typography</Heading>
-          <Heading size={1} textColor="secondary">Heading 1</Heading>
-          <Heading size={2} textColor="secondary">Heading 2</Heading>
-          <Heading size={3} textColor="secondary">Heading 3</Heading>
-          <Heading size={4} textColor="secondary">Heading 4</Heading>
+          <Heading size={2} textColor="secondary" textAlign="center" margin="5%">With Pet Helper, You Can..</Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={5} textColor="secondary" textAlign="center" margin="5%">View Pet Info & Create Reminders</Heading>
+          <Image src={images.gifirst} />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={5} textColor="secondary" textAlign="center" margin="5%">Find an Adoption Agency Near You</Heading>
+          <Image src={images.gifsecond} />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={2} textColor="secondary" textAlign="center" margin="5%">With Pet Helper, You Can..</Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={2} textColor="secondary">
+            Organize Pet Information
+            <br />
+            Send Reminders for Pet Care
+            <br />
+            Find Pet Adoption Agencies
+            <br />
+        </Heading>
+          <Heading size={3} textColor="secondary">Key Features</Heading>
+          <Heading size={5} textColor="secondary">Organizational & Planning Application.</Heading>
           <Heading size={5} textColor="secondary">Heading 5</Heading>
           <Text size={6} textColor="secondary">Standard text</Text>
         </Slide>
