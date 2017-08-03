@@ -131,7 +131,9 @@ export default class Presentation extends React.Component {
           </Heading>
           <List size={1} margin="5%" caps>
             <ListItem>Interactive Blog</ListItem>
-            <ListItem>Mobile Responsiveness</ListItem>
+            <ListItem>Improved Responsiveness</ListItem>
+            <ListItem>Detailed Accessibility</ListItem>
+            <ListItem>Suggested Reminders</ListItem>
             <ListItem>Additional Resources</ListItem>
           </List>
         </Slide>
@@ -146,6 +148,11 @@ export default class Presentation extends React.Component {
             <ListItem>Axios</ListItem>
             <ListItem>Materialize</ListItem>
           </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={3} textColor="primary" caps margin="5%">
+            Thanks to the DPL Community!
+          </Heading>
         </Slide>
 
       </Deck>
