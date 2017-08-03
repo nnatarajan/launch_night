@@ -39,8 +39,10 @@ const images = {
   puppy: require("../assets/puppy.jpg"),
   cat: require("../assets/cat.jpg"),
   catwide: require("../assets/cat-wide.jpg"),
-  gifirst: require("../assets/pet1.gif"),
-  gifsecond: require("../assets/pet2.gif"),
+  gifirst: require("../assets/pet_helper1.gif"),
+  gifsecond: require("../assets/pet_helper2.gif"),
+  gifthird: require("../assets/pet_helper3.gif"),
+  kitten: require("../assets/kitten2.jpg"),
   git: require("../assets/git.svg")
 };
 
@@ -101,45 +103,51 @@ export default class Presentation extends React.Component {
           <Heading size={2} textColor="secondary" textAlign="center" margin="5%">With Pet Helper, You Can..</Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={5} textColor="secondary" textAlign="center" margin="5%">View Pet Info & Create Reminders</Heading>
           <Image src={images.gifirst} />
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={5} textColor="secondary" textAlign="center" margin="5%">Find an Adoption Agency Near You</Heading>
           <Image src={images.gifsecond} />
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={2} textColor="secondary" textAlign="center" margin="5%">With Pet Helper, You Can..</Heading>
+          <Image src={images.gifthird} />
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={2} textColor="secondary">
-            Organize Pet Information
-            <br />
-            Send Reminders for Pet Care
-            <br />
-            Find Pet Adoption Agencies
-            <br />
-        </Heading>
-          <Heading size={3} textColor="secondary">Key Features</Heading>
-          <Heading size={5} textColor="secondary">Organizational & Planning Application.</Heading>
-          <Heading size={5} textColor="secondary">Heading 5</Heading>
-          <Text size={6} textColor="secondary">Standard text</Text>
+          <Heading size={3} textColor="secondary" textAlign="center" margin="5%">Love Your Pet
+          </Heading>
+          <Image src={images.kitten} />
         </Slide>
-        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>Standard List</Heading>
-          <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={3} textColor="primary" caps margin="5%">
+            Road Blocks
+          </Heading>
+          <List size={1} margin="5%" caps>
+            <ListItem>Time Constraints</ListItem>
+            <ListItem>Why Does React Redux require so many components?</ListItem>
           </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
+          <Heading size={3} textColor="primary" caps margin="5%">
+            Plans for the Future of the App
+          </Heading>
+          <List size={1} margin="5%" caps>
+            <ListItem>Interactive Blog</ListItem>
+            <ListItem>Mobile Responsiveness</ListItem>
+            <ListItem>Additional Resources</ListItem>
+          </List>
         </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={3} textColor="primary" caps margin="5%">
+            Technologies Utilized
+          </Heading>
+          <List size={1} margin="5%" caps>
+            <ListItem>Ruby on Rails</ListItem>
+            <ListItem>React</ListItem>
+            <ListItem>Redux</ListItem>
+            <ListItem>Axios</ListItem>
+            <ListItem>Materialize</ListItem>
+          </List>
+        </Slide>
+
       </Deck>
     );
   }
